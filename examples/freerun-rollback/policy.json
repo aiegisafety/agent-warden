@@ -1,0 +1,14 @@
+{
+  "version": "0.2",
+  "preset": "explore",
+  "defaults": { "irreversible": "" },
+  "rules": [
+    { "match": { "substrate": "net", "class": "net.egress", "dest": "api.github.com" }, "verdict": "allow" },
+    { "match": { "substrate": "net", "class": "net.egress" }, "verdict": "escalate" },
+    { "match": { "substrate": "value", "class": "value.transfer" }, "verdict": "sandbox" }
+  ],
+  "hard_deny": [
+    { "match": { "substrate": "net", "class": "net.egress", "dest_in": ["*.known-exfil"] } },
+    { "match": { "class": "cred.export" } }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@aiegis/openclaw-agent-warden",
+  "version": "0.1.0",
+  "description": "Agent Warden Tier-1 adapter for OpenClaw — governs every tool call through the AW broker.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.3.0"
+  }
+}

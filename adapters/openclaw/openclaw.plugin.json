@@ -1,0 +1,11 @@
+{
+  "id": "agent-warden",
+  "name": "Agent Warden",
+  "description": "Routes every OpenClaw tool call through the Agent Warden broker (Tier-1 cooperative governance): reversible actions run free; the irreversible frontier is gated with allow/deny/escalate/sandbox and recorded in a user-owned tamper-evident ledger.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

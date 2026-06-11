@@ -1,0 +1,47 @@
+# Go
+/reference/bin/
+*.exe
+*.test
+*.out
+go.work
+go.work.sum
+
+# Build / dist
+/dist/
+/build/
+/packaging/dist/
+AgentWarden-v*.zip
+AgentWarden-Setup-v*.exe
+
+# Local runtime artifacts (snapshots, ledgers, policy under test)
+*.aw-ledger
+*.snapshot/
+.aw/
+.aw-demo/
+.aw-run/
+.aw-llm/
+_demo/
+_run/
+_llm/
+_vault/
+.aw-vault/
+*.enc
+
+# Secrets — never commit
+.env
+
+# Local maintainer publish helpers (not part of the open project)
+/PUSH_TO_GITHUB.bat
+/PUBLISH_HERE.txt
+/scripts/push_to_github.ps1
+
+# Private design docs — kept local, NOT published (spec, threat model, HLD, ADRs)
+/spec/
+/docs/
+/LICENSE-SPEC
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

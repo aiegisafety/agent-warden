@@ -1,0 +1,12 @@
+{
+  "version": "0.2",
+  "preset": "stable",
+  "defaults": { "irreversible": "" },
+  "rules": [
+    { "match": { "substrate": "net", "class": "net.egress", "dest": "pay.test" }, "verdict": "sandbox" },
+    { "match": { "substrate": "net", "class": "net.egress" }, "verdict": "escalate" }
+  ],
+  "hard_deny": [
+    { "match": { "substrate": "net", "class": "net.egress", "dest_in": ["*.evil.test"] } }
+  ]
+}

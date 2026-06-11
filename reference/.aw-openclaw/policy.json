@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "preset": "stable",
+  "defaults": { "irreversible": "" },
+  "rules": [
+    { "match": { "substrate": "net", "class": "net.egress" }, "verdict": "escalate" },
+    { "match": { "substrate": "value", "class": "value.message" }, "verdict": "sandbox" }
+  ],
+  "hard_deny": [
+    { "match": { "class": "cred.use" } },
+    { "match": { "class": "unknown" } }
+  ]
+}
